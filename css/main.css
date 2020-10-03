@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+:root {
+  --mainDark: #242325;
+  --mainGreen: #61e786;
+  --mainWhite: #fff;
+  --mainGrey: #eeeeee;
+}
+body {
+  font-family: "Mali", cursive;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+/* global */
+.text-green {
+  color: var(--mainGreen);
+}
+.text-slant {
+  font-family: "Caveat", cursive;
+}
+.green__btn {
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen);
+  background: transparent;
+}
+.green__btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.title-underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline-center {
+  position: absolute;
+  width: 50%;
+  height: 0.6rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  background-color: var(--mainGreen) !important;
+}
+.blockquote {
+  border-left: 0.5rem solid var(--mainGreen);
+}
+.navbar {
+  background-color: var(--mainDark);
+}
+.phone-icon {
+  border: 0.1rem solid var(--mainGreen);
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: var(--mainGreen);
+}
+.banner-info {
+  min-height: calc(100vh - 101px);
+  background-color: var(--mainGrey);
+  position: relative;
+}
+.banner-info__fooer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--mainGreen);
+}
+.banner-img {
+  min-height: calc(100vh - 101px);
+
+  background: url("../img/bannerBcg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.banner-img-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  background-color: var(--mainDark);
+}
+.img-container {
+  position: relative;
+}
+.featured-icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.featured-icon-left {
+  background-color: var(--mainDark);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+.featured-icon-right {
+  background-color: var(--mainGreen);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+.featured {
+  background-color: var(--mainGrey);
+}
+.contact {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.contact-btn {
+  background: transparent;
+  border: 0.1rem solid var(--mainWhite);
+  color: var(--mainWhite);
+}
+.contact-btn:hover {
+  background: var(--mainWhite);
+  color: var(--mainGreen);
+}
+.services,
+.tour {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bannerBcg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.services-info-text {
+  color: var(--mainWhite);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-decoration: none !important;
+  background-color: var(--mainGreen);
+}
+.services-info-text:hover {
+  text-decoration: none;
+  color: var(--mainDark) !important;
+}
+.services-icon {
+  font-size: 2rem;
+  color: var(--mainGreen);
+  padding: 0.5rem;
+  border: 0.1rem solid var(--mainGreen);
+  margin-right: 1rem;
+  transition: all 1s ease-in-out;
+}
+.services-icon:hover {
+  background-color: var(--mainGreen);
+  color: var(--mainGrey);
+}
+.services-link:hover {
+  color: var(--mainWhite);
+}
+.gallery-btn:hover {
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.gallary-img-container {
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden;
+}
+.gallary-img {
+  transition: all 1s linear;
+}
+.gallary-img-container:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.gallary-img-container:hover .gallary-img {
+  opacity: 0.3;
+}
+.gallary-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+  text-decoration: none;
+  padding: 0.4rem;
+  transition: all 0.5s linear;
+}
+.gallary-img-container:hover .gallary-info {
+  transform: translateX(-50%);
+}
+.gallary-img-container:hover .gallary-icon {
+  opacity: 1;
+}
+.gallary-info:hover {
+  color: var(--mainDark);
+  text-decoration: none;
+}
+.gallary-icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--mainWhite);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.tour-icon {
+  font-size: 2rem;
+  color: var(--mainGreen);
+  background-color: var(--mainWhite);
+  padding: 0.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.tour-icon:hover {
+  color: var(--mainWhite);
+  background-color: var(--mainGreen);
+}
+.footer {
+  background-color: var(--mainDark);
+}
